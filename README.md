@@ -1,10 +1,13 @@
 # Static Website Hosting Using AWS S3
 # Step 1:
+
+-Sign in to the "AWS Management Console".
+
 ![Screenshot_20230620_130010](https://github.com/Diplahane/AWS-S3/assets/129828021/88b6db5b-3911-4183-aee6-f55f2ed373b8)
 
 # Step 2: 
 
--Sign in to the AWS Management Console and navigate to the S3 service by searching for "S3" in the AWS Management Console search bar.
+-Navigate to the S3 service by searching for "S3" in the AWS Management Console search bar.
 
 ![Screenshot_20230620_130443](https://github.com/Diplahane/AWS-S3/assets/129828021/a58dc3ab-edea-4c17-b3bd-d5116c6aa22b)
 
@@ -31,6 +34,9 @@
 
 
 # Step 5: 
+
+-Your Bucket is Successfully Created.
+
 ![Screenshot_20230620_130823](https://github.com/Diplahane/AWS-S3/assets/129828021/56b5f56c-3284-413b-b7bd-9dead0e41f6e)
 
 -Navigate to bucket "Properties"
@@ -81,13 +87,15 @@ Click on the "Save" button to save the file.
 
 
 
--Go to the "Add files" select the "index.html" file and then click on the "Upload" button
+-Go to the "Add files".
 
 ![Screenshot_20230620_131624](https://github.com/Diplahane/AWS-S3/assets/129828021/5663c46d-1831-44fe-b458-6788d7fb438b)
 
+-Select the "dipindex.html" file.
 
 ![Screenshot_20230620_131707](https://github.com/Diplahane/AWS-S3/assets/129828021/0b73f7e8-ee89-45b6-adf5-c55aee99115e)
 
+-Then click on the "Upload" button.
 ![Screenshot_20230620_131727](https://github.com/Diplahane/AWS-S3/assets/129828021/4b9b8d4c-376e-463b-8828-5091c8664ee1)
 
 -Once the upload is complete, you will see a confirmation message indicating that the file has been successfully uploaded.
@@ -97,7 +105,7 @@ Click on the "Save" button to save the file.
 
 
 
-# Step 6
+# Step 7
 
 -Enable Public Access 
 
@@ -121,7 +129,7 @@ Click on the "Save" button to save the file.
 
 ![Screenshot_20230620_131924](https://github.com/Diplahane/AWS-S3/assets/129828021/86ae9715-dd6a-477b-9424-619cfb7acab1)
 
-# Step 7
+# Step 8
 
 -Go to the bucket settings and select "Permissions."
 
@@ -133,6 +141,9 @@ Click on the "Save" button to save the file.
 
 ![Screenshot_20230620_132107](https://github.com/Diplahane/AWS-S3/assets/129828021/684af865-550f-494c-851b-0d4fa33c1d54)
 
+-Copy that "Bucket ARN" keep it for next Step.
+
+![Screenshot_20230620_132348](https://github.com/Diplahane/AWS-S3/assets/129828021/74473f02-cf0e-4d4a-9f8a-98d30f2d0bdb)
 
 -Select the type of policy as "S3" and set the effect to "Allow."
 
@@ -140,12 +151,13 @@ Click on the "Save" button to save the file.
 
 -In the "Action" field, select "GetObject" to grant read access to the objects in the bucket.
 
--Paste the ARN (Amazon Resource Name) from the earlier tab into the "ARN" field.
-![Screenshot_20230620_132348](https://github.com/Diplahane/AWS-S3/assets/129828021/74473f02-cf0e-4d4a-9f8a-98d30f2d0bdb)
+-Paste the Bucket ARN (Amazon Resource Name) from the earlier tab you copy.
 
 -Click on "Add Statement" to include the generated policy.
 
 ![Screenshot_20230620_132420](https://github.com/Diplahane/AWS-S3/assets/129828021/43d77d85-72fc-487e-ad19-0d0f430fa51c)
+
+-Click on the "Generate Policy" then policy will be generated.
 
 ![Screenshot_20230620_132442](https://github.com/Diplahane/AWS-S3/assets/129828021/6e32a6a8-fc23-413a-8b5c-d3a857f33015)
 
@@ -153,6 +165,7 @@ Click on the "Save" button to save the file.
 
 ![Screenshot_20230620_132454](https://github.com/Diplahane/AWS-S3/assets/129828021/c9a88095-bf47-4a89-827b-bcc7398214de)
 
+-Paste that policy here.
 
 -Add "/*" at the end of the resource to allow access to all files under the bucket.
 
@@ -160,9 +173,11 @@ Click on the "Save" button to save the file.
 
 ![Screenshot_20230620_133544](https://github.com/Diplahane/AWS-S3/assets/129828021/f7e0908b-8d52-4a47-bb4d-bf3991d1cb35)
 
--Navigate to the bucket's website endpoint and copy the provided link.
+-Go to the Bucket "Properties".
 
 ![Screenshot_20230620_133818](https://github.com/Diplahane/AWS-S3/assets/129828021/07b69bd9-efc2-402e-b044-4124b03a79b8)
+
+-Navigate to the bucket's website endpoint and copy the provided link.
 
 ![Screenshot_20230620_133830](https://github.com/Diplahane/AWS-S3/assets/129828021/624e6002-cd59-4a7c-b8fb-66ea0efbc897)
 
