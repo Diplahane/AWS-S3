@@ -1,5 +1,5 @@
 # Static Website Hosting Using AWS S3
-
+# Step 1:
 ![Screenshot_20230620_130010](https://github.com/Diplahane/AWS-S3/assets/129828021/88b6db5b-3911-4183-aee6-f55f2ed373b8)
 
 # Step 2: 
@@ -127,12 +127,11 @@ Click on the "Save" button to save the file.
 
 -Locate the section titled "Bucket policy" and click on "Edit."
 
-![16ss](https://github.com/harshartz/AWS-EC2/assets/130890384/33343d96-3066-4c82-9d35-fb52d164761e)
-
+![Screenshot_20230620_132038](https://github.com/Diplahane/AWS-S3/assets/129828021/397ce014-d02a-42bc-9aa8-6ce6cc4844fb)
 
 -Click on "Policy Generator" it will open in a new window.
 
-![17ss](https://github.com/harshartz/AWS-EC2/assets/130890384/8c2a1ca0-9f7f-4ba9-8117-8c06d156d97f)
+![Screenshot_20230620_132107](https://github.com/Diplahane/AWS-S3/assets/129828021/684af865-550f-494c-851b-0d4fa33c1d54)
 
 
 -Select the type of policy as "S3" and set the effect to "Allow."
@@ -142,35 +141,36 @@ Click on the "Save" button to save the file.
 -In the "Action" field, select "GetObject" to grant read access to the objects in the bucket.
 
 -Paste the ARN (Amazon Resource Name) from the earlier tab into the "ARN" field.
+![Screenshot_20230620_132348](https://github.com/Diplahane/AWS-S3/assets/129828021/74473f02-cf0e-4d4a-9f8a-98d30f2d0bdb)
 
 -Click on "Add Statement" to include the generated policy.
 
-![18ss](https://github.com/harshartz/AWS-EC2/assets/130890384/b20da9cb-c5dd-4c7e-aa93-9e7ff4df02a8)
+![Screenshot_20230620_132420](https://github.com/Diplahane/AWS-S3/assets/129828021/43d77d85-72fc-487e-ad19-0d0f430fa51c)
 
+![Screenshot_20230620_132442](https://github.com/Diplahane/AWS-S3/assets/129828021/6e32a6a8-fc23-413a-8b5c-d3a857f33015)
 
 -Copy the generated policy and paste it into the policy editor tab.
 
-![19ss](https://github.com/harshartz/AWS-EC2/assets/130890384/232a17ab-2752-46e9-b0ec-1c3a18363b82)
+![Screenshot_20230620_132454](https://github.com/Diplahane/AWS-S3/assets/129828021/c9a88095-bf47-4a89-827b-bcc7398214de)
 
 
 -Add "/*" at the end of the resource to allow access to all files under the bucket.
 
 -Click on "Save Changes" to apply the bucket policy.
 
-![20ss](https://github.com/harshartz/AWS-EC2/assets/130890384/9d8b06bb-1838-4a38-8af7-4c2ef3adff7e)
-
+![Screenshot_20230620_133544](https://github.com/Diplahane/AWS-S3/assets/129828021/f7e0908b-8d52-4a47-bb4d-bf3991d1cb35)
 
 -Navigate to the bucket's website endpoint and copy the provided link.
 
-![21ss](https://github.com/harshartz/AWS-EC2/assets/130890384/2ac47666-0f5a-40a7-8ecd-f90e8783fb15)
+![Screenshot_20230620_133818](https://github.com/Diplahane/AWS-S3/assets/129828021/07b69bd9-efc2-402e-b044-4124b03a79b8)
 
+![Screenshot_20230620_133830](https://github.com/Diplahane/AWS-S3/assets/129828021/624e6002-cd59-4a7c-b8fb-66ea0efbc897)
 
 -Open the link in a browser to verify if the website is functioning correctly.
 
 -You should now see your static website live and accessible through the provided URL.
 
-![22ss](https://github.com/harshartz/AWS-EC2/assets/130890384/4ae35226-5047-4bad-aed1-cdde36f6e7f1)
-
+![Screenshot_20230620_133904](https://github.com/Diplahane/AWS-S3/assets/129828021/dbe3c381-bc01-4fe1-b486-1551edbf4cfd)
 
 
 # That's it! You have successfully hosted a static website using AWS S3.
